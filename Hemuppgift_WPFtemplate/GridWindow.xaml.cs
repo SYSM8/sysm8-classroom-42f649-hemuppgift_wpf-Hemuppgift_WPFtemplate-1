@@ -62,6 +62,11 @@ namespace Hemuppgift_WPFtemplate
 
                 }
             }
+            else
+            {
+                MessageBox.Show("Ogiltig inmatning");
+
+            }
         }
     }   
 

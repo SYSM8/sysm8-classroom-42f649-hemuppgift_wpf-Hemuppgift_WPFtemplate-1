@@ -22,6 +22,23 @@ namespace Hemuppgift_WPFtemplate
         public StackWindow()
         {
             InitializeComponent();
+     
+        
+        }
+
+        //private void stackonstack();
+
+        private void VertBtn_Checked(object sender, RoutedEventArgs e)
+        {
+            stackonstack.Orientation = Orientation.Vertical;
+
+        }
+
+        private void HoreBtn_Checked(object sender, RoutedEventArgs e)
+        {
+            stackonstack.Orientation = Orientation.Horizontal;
+
         }
     }
+
 }

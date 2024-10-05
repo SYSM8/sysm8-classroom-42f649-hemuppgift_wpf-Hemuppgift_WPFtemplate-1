@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="StackWindow" Height="450" Width="800">
     <Grid>
-        
+       
+        <StackPanel Orientation="Horizontal"> 
+        <TextBlock Text="Horizontal: " HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <RadioButton x:Name="HoreBtn" HorizontalAlignment="Center" VerticalAlignment="Top" Checked="HoreBtn_Checked" />
+            <TextBlock Text="Vertical: " HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <RadioButton x:Name="VertBtn" HorizontalAlignment="Center" VerticalAlignment="Top" Checked="VertBtn_Checked" />
+        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="0,50,0,0">
+            <StackPanel x:Name="stackonstack">
+                <Rectangle Fill="Red" Width="100" Height="100" Margin="5"/>
+                <Rectangle Fill="Blue" Width="90" Height="90" Margin="5"/>
+                <Rectangle Fill="Green" Width="80" Height="80" Margin="5"/>
+                <Rectangle Fill="Yellow" Width="70" Height="70" Margin="5"/>
+                <Rectangle Fill="Pink" Width="60" Height="60" Margin="5"/>
+                <Rectangle Fill="Purple" Width="50" Height="50" Margin="5"/>
+                <Rectangle Fill="Brown" Width="40" Height="40" Margin="5"/>
+                <Rectangle Fill="Orange" Width="30" Height="30" Margin="5"/>
+
+
+
+            </StackPanel>
+        </ScrollViewer>
+
     </Grid>
 </Window>
