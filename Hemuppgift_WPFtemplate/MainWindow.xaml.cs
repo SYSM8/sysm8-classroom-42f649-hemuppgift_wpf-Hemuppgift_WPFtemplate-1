@@ -21,17 +21,20 @@ namespace Hemuppgift_WPFtemplate
 
         private void StackBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            StackWindow stackWindow = new StackWindow();
+            stackWindow.Show();
         }
 
         private void WrapBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            WrapWindow wrapWindow = new WrapWindow();
+            wrapWindow.Show();
         }
 
         private void DockBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            DockWindow dockWindow = new DockWindow();
+            dockWindow.Show();
         }
 
         
