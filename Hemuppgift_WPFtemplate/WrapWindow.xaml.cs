@@ -23,5 +23,15 @@ namespace Hemuppgift_WPFtemplate
         {
             InitializeComponent();
         }
+
+        private void VertiBtn1_Checked(object sender, RoutedEventArgs e)
+        {
+            wrapGift.Orientation = Orientation.Vertical;
+        }
+
+        private void HoriBtn1_Checked(object sender, RoutedEventArgs e)
+        {
+            wrapGift.Orientation=Orientation.Horizontal;
+        }
     }
 }
