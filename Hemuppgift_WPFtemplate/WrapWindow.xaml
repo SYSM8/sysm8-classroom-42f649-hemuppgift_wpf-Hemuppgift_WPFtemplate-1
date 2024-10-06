@@ -1,0 +1,34 @@
+﻿<Window x:Class="Hemuppgift_WPFtemplate.WrapWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
+        mc:Ignorable="d"
+        Title="WrapWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Horizontal: " HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <RadioButton x:Name="HoriBtn1" HorizontalAlignment="Center" VerticalAlignment="Top" Checked="HoriBtn1_Checked" />
+            <TextBlock Text="Vertical: " HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <RadioButton x:Name="VertiBtn1" HorizontalAlignment="Center" VerticalAlignment="Top" Checked="VertiBtn1_Checked" />
+        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="0,50,0,0">
+            <WrapPanel x:Name="wrapGift">
+                <Ellipse Fill="Red" Width="100" Height="100" Margin="5"/>
+                <Ellipse Fill="Blue" Width="90" Height="90" Margin="5"/>
+                <Ellipse Fill="Green" Width="80" Height="80" Margin="5"/>
+                <Ellipse Fill="Yellow" Width="70" Height="70" Margin="5"/>
+                <Ellipse Fill="Pink" Width="60" Height="60" Margin="5"/>
+                <Ellipse Fill="Purple" Width="50" Height="50" Margin="5"/>
+                <Ellipse Fill="Brown" Width="40" Height="40" Margin="5"/>
+                <Ellipse Fill="Orange" Width="30" Height="30" Margin="5"/>
+
+
+
+            </WrapPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Window>
+
