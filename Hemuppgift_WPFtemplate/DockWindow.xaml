@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
         mc:Ignorable="d"
         Title="DockWindow" Height="450" Width="800">
-    <Grid>
+    <DockPanel>
         
-    </Grid>
+        <Button Content="Top" DockPanel.Dock="Top" Width="80" Height="30" Margin="5" />
+
+        <Button Content="Bottom" DockPanel.Dock="Bottom" Width="80" Height="30" Margin="5" />
+
+        <Button Content="Left" DockPanel.Dock="Left" Width="80" Height="30" Margin="5" />
+
+        <Button Content="Right" DockPanel.Dock="Right" Width="80" Height="30" Margin="5" />
+
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image x:Name="TrophyImage" Visibility="Collapsed" Width="300" Height="300" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <Button x:Name="CenterButton" Content="Center" Width="80" Height="30" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Click="CenterButton_Click" />
+        </Grid>
+    </DockPanel>
 </Window>

@@ -23,5 +23,12 @@ namespace Hemuppgift_WPFtemplate
         {
             InitializeComponent();
         }
+
+        private void CenterButton_Click(object sender, RoutedEventArgs e)
+        {
+            CenterButton.Visibility = Visibility.Collapsed;
+            TrophyImage.Source = new BitmapImage(new Uri("C:\\Users\\turec\\Source\\Repos\\hemuppgift-wpf-ture-c\\Hemuppgift_WPFtemplate\\TrophyImage.jpg"));
+            TrophyImage.Visibility = Visibility.Visible;
+        }
     }
 }
